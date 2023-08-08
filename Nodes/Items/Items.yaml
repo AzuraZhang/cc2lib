@@ -113,3 +113,57 @@ Children:
         Type: BehaviourStartPriorityVariableType
         DataType: Byte
         Value: 180
+- Name: NewFolder
+  Type: ObjectLibraryItem
+  Children:
+  - Name: NewFolder
+    Type: FolderType
+    Children:
+    - Name: CircularGauge1
+      Id: g=824c0ee3fec9c595e8d0e2f0770a80b6
+      Supertype: CircularGauge
+      ReferenceType: HasComponent
+      Children:
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+      - Name: MinValue
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+      - Name: MaxValue
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 100.0
+      - Name: WarningZones
+        Type: BaseObjectType
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 210.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 210.0
+    - Name: LED1
+      Id: g=e336feeffdce2fdd7cda1a700abc20d0
+      Supertype: Led
+      ReferenceType: HasComponent
+      Children:
+      - Name: Active
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
