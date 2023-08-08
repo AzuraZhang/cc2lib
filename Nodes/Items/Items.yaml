@@ -35,3 +35,42 @@ Children:
         DataType: LocalizedText
         ModellingRule: Optional
         Value: {"LocaleId":"en-US","Text":"Button1"}
+- Name: Panel2
+  Type: ObjectLibraryItem
+  Children:
+  - Name: Panel2
+    Id: g=dd3ea05e266b111bca261dd55121d787
+    Supertype: Panel
+    ReferenceType: HasComponent
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: TextBox1
+      Type: TextBox
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 110.0
+    - Name: DesignTimeNetLogic1
+      Type: NetLogic
+      Children:
+      - Class: Method
+        Name: Method1
+      - Name: BehaviourStartPriority
+        Type: BehaviourStartPriorityVariableType
+        DataType: Byte
+        Value: 180
